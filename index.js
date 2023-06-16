@@ -1,5 +1,33 @@
-const url = 'https://json-server--3000.local.webcontainer.io/comments';
+// Dependencies
+const express = require('express');
 
-fetch(url)
-  .then(r => r.json())
-  .then(json => (document.getElementById('output').innerHTML = JSON.stringify(json, null, 2)));
+const app = express();
+
+const cors = require('cors');
+
+app.use(cors());
+
+const bodyparser = require('body-parser');
+
+app.use(bodyparser.urlencoded({ extended: true }));
+
+app.use(express.json());
+
+const table1Router = require('./route/table1.route.js');
+
+const database = require('./model/table1.model.js');
+
+app.use(table1Router);
+
+// To define the model in dtabase
+database.sequelize
+  .sync()
+  .then( result => console.log(result))
+  .catch((err) => console.log(err));
+
+
+// Starting the server
+app.listen(3000, (err) => {
+  if (err) throw err;
+  console.log(' app listen on port 3000 ');
+});
