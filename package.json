@@ -1,0 +1,19 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "http-server",
+    "backend": "json-server -w db.json"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  },
+  "description": "1. Run `npm run backend` in the terminal to start the server. 2. Open a second terminal (by clicking the `[+]` icon) and run `npm run frontend` to open a simple page that fetches data from our backend",
+  "main": "index.js",
+  "author": "Sudipta Jana",
+  "license": "ISC"
+}
