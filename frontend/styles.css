@@ -1,6 +1,9 @@
-body {
-  background-color: #f8f9fa;
+*{
+  font-family: 'Eczar', serif;
 }
+ body {
+  background-image: url("../Screenshot\ 2023-06-17\ 122245.png")
+} 
 
 #main-header {
   border-radius: 0;
@@ -38,6 +41,41 @@ body {
   background-color: #f8f9fa;
 }
 
-.btn{
+.btn {
   margin-left: 7px;
 }
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px 2px #1ebe78;
+}
+
+input[type=number]:focus {
+  box-shadow: 0 0 5px 2px #00d6f2;
+}
+
+select:focus {
+  box-shadow: 0 0 5px 2px #950b85;
+}
+
+
+body:hover {
+  background-color: #ccc;
+  /* Background color on hover */
+}
+
+#main-header {
+  background-image: url('../Screenshot\ 2023-06-17\ 122639.png');
+
+}
+
+
+.background-image {
+  /* position:relative; */
+  /* top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+  /* z-index: -1; */
+  /* filter: blur(5px); Adjust the blur intensity as desired */
+}
+

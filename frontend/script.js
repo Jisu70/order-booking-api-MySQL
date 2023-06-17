@@ -44,7 +44,7 @@ async function showAllExpencesOnScreen() {
 
     const editButton = document.createElement("btn");
 
-    editButton.className = "btn btn-info";
+    editButton.className = "btn btn-info rounded";
     editButton.style.float = "right";
     editButton.textContent = "Edit";
     editButton.addEventListener("click", () =>
@@ -52,7 +52,7 @@ async function showAllExpencesOnScreen() {
     );
 
     const deleteButton = document.createElement("button");
-    deleteButton.className = "btn btn-warning";
+    deleteButton.className = "btn btn-warning rounded";
     deleteButton.style.float = "right";
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", () => deleteItem(item.id));
