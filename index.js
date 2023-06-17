@@ -19,7 +19,7 @@ const database = require("./model/table1.model.js");
 
 app.use(table1Router);
 
-// To define the model in dtabase
+// To Create the defined model in dtabase
 database.sequelize
   .sync()
   .then()

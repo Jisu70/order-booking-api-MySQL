@@ -5,6 +5,9 @@ const router = express.Router();
 
 const table1Controller = require('../controller/table1Controller');
 
+
+// Routes
+
 router.get('/', table1Controller.homePage);
 
 router.get('/total-expences', table1Controller.totalExpences);
