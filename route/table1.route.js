@@ -5,6 +5,8 @@ const router = express.Router();
 
 const table1Controller = require('../controller/table1Controller');
 
+router.get('/', table1Controller.homePage);
+
 router.get('/total-expences', table1Controller.totalExpences);
 
 router.post('/savedata', table1Controller.saveData);
