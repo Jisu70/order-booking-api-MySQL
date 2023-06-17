@@ -19,6 +19,10 @@ const Table1 = sequelize.define(
       type: Sequelize.STRING,
       allowNull: false,
     },
+    table: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
   },
   {
     timestamps: false, // Disable timestamps

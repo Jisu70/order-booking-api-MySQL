@@ -12,9 +12,11 @@ app.homePage = (req, res) => {
 app.saveData = (req, res) => {
   const item = req.body.item;
   const amount = req.body.amount;
+  const table = req.body.table
   Table1.create({
     item,
     amount,
+    table
   })
     .then((result) => {
       console.log(" Expences Added ");
