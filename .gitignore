@@ -24,7 +24,7 @@ Thumbs.db
 /build/
 
 # Ignore dependencies and package managers
-/node_modules/
+node_modules/
 /vendor/
 
 # Ignore logs and temporary files
